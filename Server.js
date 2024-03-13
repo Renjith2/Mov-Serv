@@ -22,8 +22,10 @@ app.use("/api/bookings", bookingroute);
 const upcomingRoute = require('./routes/upcomingRoute')
 app.use("/api/upcoming", upcomingRoute);
 
-
+app.get('/',(req,res)=>{
+    res.send("Hi thee!!!")
+})
  
-app.listen(8089,(req,res)=>{
+app.listen(1244,(req,res)=>{
     console.log("Sever is Running")    
 })
